@@ -7,27 +7,43 @@ function phoneNumber(input){
 
     if((input.value.match(mtnPattern)) && !(input.value.match(airtelPattern)) && !(input.value.match(etisalatPattern)) && !(input.value.match(gloPattern)))
     {
-        alert("mtn number");
+        document.getElementById("mtn").style.display = "inline-block";
+        document.getElementById("airtel").style.display = "none";
+        document.getElementById("etisalat").style.display = "none";
+        document.getElementById("glo").style.display = "none";
+        /*alert("mtn number") */;
         return true;
     }
     else if(!(input.value.match(mtnPattern)) && (input.value.match(airtelPattern)) && !(input.value.match(etisalatPattern)) && !(input.value.match(gloPattern)))
     {
-        alert("airtel number");
+        document.getElementById("mtn").style.display = "none";
+        document.getElementById("airtel").style.display = "inline-block";
+        document.getElementById("etisalat").style.display = "none";
+        document.getElementById("glo").style.display = "none";
+        /*alert("airtel number");*/
         return true;
     }
     else if(!(input.value.match(mtnPattern)) && !(input.value.match(airtelPattern)) && (input.value.match(etisalatPattern)) && !(input.value.match(gloPattern)))
     {
-        alert("etisalat number");
+        document.getElementById("mtn").style.display = "none";
+        document.getElementById("airtel").style.display = "none";
+        document.getElementById("etisalat").style.display = "inline-block";
+        document.getElementById("glo").style.display = "none";
+        /*alert("etisalat number");*/
         return true;
     }
     else if(!(input.value.match(mtnPattern)) && !(input.value.match(airtelPattern)) && !(input.value.match(etisalatPattern)) && (input.value.match(gloPattern)))
     {
-        alert("glo number");
+        document.getElementById("mtn").style.display = "none";
+        document.getElementById("airtel").style.display = "none";
+        document.getElementById("etisalat").style.display = "none";
+        document.getElementById("glo").style.display = "inline-block";
+        /*alert("glo number");*/
         return true;
     }
     else
     {
-        alert("invalid number pattern");
+        /*alert("invalid number pattern");*/
         return false;
     }
 }
