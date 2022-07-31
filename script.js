@@ -11,6 +11,7 @@ function phoneNumber(input){
         document.getElementById("airtel").style.display = "none";
         document.getElementById("etisalat").style.display = "none";
         document.getElementById("glo").style.display = "none";
+        document.getElementById("invalid").style.display = "none";
         /*alert("mtn number") */;
         return true;
     }
@@ -20,6 +21,7 @@ function phoneNumber(input){
         document.getElementById("airtel").style.display = "inline-block";
         document.getElementById("etisalat").style.display = "none";
         document.getElementById("glo").style.display = "none";
+        document.getElementById("invalid").style.display = "none";
         /*alert("airtel number");*/
         return true;
     }
@@ -29,6 +31,7 @@ function phoneNumber(input){
         document.getElementById("airtel").style.display = "none";
         document.getElementById("etisalat").style.display = "inline-block";
         document.getElementById("glo").style.display = "none";
+        document.getElementById("invalid").style.display = "none";
         /*alert("etisalat number");*/
         return true;
     }
@@ -38,11 +41,17 @@ function phoneNumber(input){
         document.getElementById("airtel").style.display = "none";
         document.getElementById("etisalat").style.display = "none";
         document.getElementById("glo").style.display = "inline-block";
+        document.getElementById("invalid").style.display = "none";
         /*alert("glo number");*/
         return true;
     }
     else
     {
+        document.getElementById("mtn").style.display = "none";
+        document.getElementById("airtel").style.display = "none";
+        document.getElementById("etisalat").style.display = "none";
+        document.getElementById("glo").style.display = "none";
+        document.getElementById("invalid").style.display = "inline-block";
         /*alert("invalid number pattern");*/
         return false;
     }

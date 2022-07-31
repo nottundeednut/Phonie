@@ -15,6 +15,6 @@ h1,form{
     text-align: center;
 }
 
-#mtn, #airtel, #etisalat, #glo{
+#mtn, #airtel, #etisalat, #glo, #invalid{
     display: none;
 }
